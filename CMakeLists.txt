@@ -3,4 +3,4 @@ project(leetcode)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(leetcode queue/t1.cpp)
+add_executable(leetcode "stack/1021Remove Outermost Parentheses.cpp")
