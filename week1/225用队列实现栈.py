@@ -10,7 +10,7 @@ class MyStack(object):
 
     def push(self, x):
         """
-        Push element x onto stack.
+        Push element x onto week1.
         :type x: int
         :rtype: None
         """
@@ -19,7 +19,7 @@ class MyStack(object):
 
     def pop(self):
         """
-        Removes the element on top of the stack and returns that element.
+        Removes the element on top of the week1 and returns that element.
         :rtype: int
         """
         for i in range(len(self.que1)):
@@ -35,7 +35,7 @@ class MyStack(object):
 
     def empty(self):
         """
-        Returns whether the stack is empty.
+        Returns whether the week1 is empty.
         :rtype: bool
         """
         if len(self.que1) == 0 and len(self.que2) == 0:
