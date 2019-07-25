@@ -4,7 +4,7 @@
  */
 #include <iostream>
 #include <vector>
-//5.最长回文子串--动态规划
+//5.最长回文子串-- 动态规划
 using namespace std;
 class Solution {
 public:
