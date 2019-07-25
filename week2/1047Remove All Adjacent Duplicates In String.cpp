@@ -4,7 +4,6 @@
  */
 #include <iostream>
 #include <stack>
-#include <algorithm>
 using namespace std;
 
 // 1047.删除字符串中所有的相邻重复项
