@@ -2,7 +2,6 @@
  *  @Author:游鱼惊梦
  *  @Date: 2019/7/26
  */
-
 #include <iostream>
 #include <climits>
 #include <vector>
@@ -26,10 +25,3 @@ public:
         return dp[amount] == INT_MAX ? -1: dp[amount];
     }
 };
-
-int main(){
-    Solution solution;
-    vector<int> vector = {1,2,5};
-    int s = solution.coinChange(vector, 21);
-    cout << s << endl;
-}
