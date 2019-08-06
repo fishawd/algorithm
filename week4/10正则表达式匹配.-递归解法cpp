@@ -1,0 +1,39 @@
+/**
+ *  @Author:游鱼惊梦
+ *  @Date: 2019/8/5
+ */
+#include <iostream>
+
+using namespace std;
+
+class Solution {
+public:
+    /*bool isMatch(string s, string p) {
+        if (s == "")
+            return p == "";
+        bool isMa = s[0] == p[0];
+        return isMa && isMatch(s.substr(1,s.size()-1),p.substr(1, p.size() -1));
+    }*/
+    /*bool isMa = false;
+    bool isMatch(string s, string p) {
+        if (s == "")
+            return p == "";
+        if (s[0] == p[0] || s[0] == '.' )
+            isMa = true;
+        return isMa && isMatch(s.substr(1,s.size()-1),p.substr(1, p.size() -1));
+    }*/
+
+
+    bool isMatch(string s, string p) {
+        if (p.empty())
+            return s.empty();
+        bool isMa = (!s.empty() && (s[0] == p[0] || p[0] == '.'));
+        if (p.size() >= 2 && p[1] == '*') {
+            //第一个递归：如果p[0]和s[0]没有匹配，p[0]之后是'* '，说明这个'*'匹配了0次，跳过 '*'和它之前的字符继续和原字符串匹配。
+            //第二个递归：如果p[0]和s[0]匹配上，p[0]之后是'* ',说明这个‘*’应该匹配大于等于1次，假设匹配了N次，N是多少需要穷举去尝试，
+            //所以我们使s[0]之后的字符串和p匹配尝试，找出isMatch为true的地方。
+            return isMatch(s, p.substr(2, p.size() - 2)) || (isMa && isMatch(s.substr(1, s.size() - 1), p));
+        } else
+            return isMa && isMatch(s.substr(1, s.size() - 1), p.substr(1, p.size() - 1));
+    }
+};
