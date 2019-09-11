@@ -2,6 +2,9 @@
  *  @Author:游鱼惊梦
  *  @Date: 2019/9/11
  */
+#include <iostream>
+
+using namespace std;
 
 struct ListNode {
     int val;
@@ -18,6 +21,7 @@ public:
     ListNode *removeNthFromEnd(ListNode *head, int n) {
         if (!head)
             return head;
+        //添加一个头结点，方便删除第一个结点
         ListNode *p = new ListNode(0);
         p->next = head;
         ListNode *q = p;//保存头指针
@@ -26,8 +30,6 @@ public:
             k++;
             head = head->next;
         }
-        //添加一个头结点，方便删除第一个结点
-
         int cur = k - n;
         int i = 0;
         while (i < cur && p){//找到被删除结点的前一个结点
