@@ -5,4 +5,4 @@ LeetCode刷题
 
 2.[cpp](code-ever/cpp/)
 
-3.[java](src/动态规划)
+3.[java](动态规划)
