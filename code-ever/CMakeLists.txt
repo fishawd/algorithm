@@ -3,4 +3,4 @@ project(leetcode)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(leetcode week5/13罗马数字转整数t.cpp)
+add_executable(leetcode cpp/13罗马数字转整数.cpp)

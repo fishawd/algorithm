@@ -1,6 +1,8 @@
 # algorithm_leetcode
 LeetCode刷题
 
-1.[week1](week1/)
+1.[py](code-ever/py/)
 
-2.[week2](week2/)
+2.[cpp](code-ever/cpp/)
+
+3.[java](src/动态规划)
