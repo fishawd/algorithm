@@ -1,4 +1,9 @@
-// 暴力法
+import java.util.Stack;
+
+
+/**
+ * 暴力法
+ */
 class Solution {
     public int longestValidParentheses(String s) {
         int n = s.length();
@@ -30,4 +35,8 @@ class Solution {
     }
 
 }
+
+
+
+
 
