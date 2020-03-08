@@ -3,7 +3,7 @@
  * @author jian
  * @date 2020/3/8 20:08
  */
-class DiffentPath2_53 {
+class DiffentPath2_63 {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int rows = obstacleGrid.length;
         int cols = obstacleGrid[0].length;
