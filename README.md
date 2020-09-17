@@ -1,10 +1,6 @@
-# algorithm_leetcode
-LeetCode刷题
+# algorithm
+常用算法
 
-1. [code-ever](code-ever) 
- 
-   1.1 [py](code-ever/py) 
- 
-   1.2 [cpp](code-ever/cpp) 
-
-2. [动态规划](动态规划)
+1. [排序](src/sort) 
+    - 冒泡排序
+    - 快速排序
