@@ -2,5 +2,4 @@
 .git
 *.iml
 out
-src
 cmake-build-debug
