@@ -3,7 +3,7 @@ package sort;
 import java.util.Arrays;
 
 /**
- * @author jian
+ * @author fishawd
  * @date 2020/9/17 15:49
  * @description 快速排序
  */
